@@ -47,7 +47,7 @@ search.addWidgets([
   refinementList({
     container: "#brand-list",
     attribute: "brand",
-    searchable: true,
+    searchable: false,
     templates: {
       header: "Brand",
     },
