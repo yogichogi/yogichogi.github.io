@@ -1,12 +1,13 @@
 {
   "name": "yogichogi.github.io",
   "version": "1.0.0",
-  "description": "",
+  "description": "BestBuy Electronics Search",
   "scripts": {
+    "start": "parcel src/index.html",
     "build": "parcel build src/index.html --dist-dir dist --public-url ./"
   },
   "keywords": [],
-  "author": "",
+  "author": "Austin Robinson",
   "license": "ISC",
   "dependencies": {
     "algoliasearch": "^4.24.0",
@@ -16,3 +17,4 @@
     "parcel": "^2.12.0"
   }
 }
+
