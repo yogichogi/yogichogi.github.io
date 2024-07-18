@@ -2,14 +2,17 @@
   "name": "yogichogi.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build src/index.html --dist-dir dist --public-url ./"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "algoliasearch": "^4.24.0",
     "instantsearch.js": "^4.73.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0"
   }
 }
