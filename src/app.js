@@ -58,6 +58,11 @@ search.addWidgets([
     templates: {
       header: "Price",
     },
+    tooltips: {
+      format(rawValue) {
+        return `$${Math.round(rawValue)}`;
+      },
+    },
   }),
 ]);
 

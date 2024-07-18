@@ -1,0 +1,30 @@
+/* Style the filters section to distinguish it from the search bar */
+#filters {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  #brand-list,
+  #price-range {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the range slider */
+  .ais-RangeSlider {
+    padding: 10px;
+  }
+  
+  .ais-RangeSlider--horizontal {
+    width: 100%;
+  }
+  
+  .ais-RangeSlider--horizontal .ais-RangeSlider-handle {
+    background-color: #007bff;
+  }
+  
+  .ais-RangeSlider--horizontal .ais-RangeSlider-track {
+    background-color: #ddd;
+  }
+  
