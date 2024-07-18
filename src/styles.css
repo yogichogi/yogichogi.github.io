@@ -10,6 +10,10 @@
   #price-range {
     margin-bottom: 20px;
   }
+
+  filters .ais-SearchBox {
+    display: none;
+  }
   
   /* Style the range slider */
   .ais-RangeSlider {
