@@ -1,49 +1,49 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-  }
-  
-  .header-top {
+}
+
+.header-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #333;
     color: white;
-  }
-  
-  .header-logo {
+}
+
+.header-logo {
     width: 50px;
     height: auto;
-  }
-  
-  .searchbox {
+}
+
+.searchbox {
     padding: 10px;
     background-color: #fff;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     height: calc(100vh - 100px); /* Adjusted to account for the header and searchbox */
-  }
-  
-  .sidebar {
+}
+
+.sidebar {
     width: 20%;
     background-color: #f4f4f4;
     padding: 20px;
     box-sizing: border-box;
     flex-shrink: 0; /* Prevent shrinking */
-  }
-  
-  .main-content {
+}
+
+.main-content {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
     background-color: lightgreen; /* For diagnostics */
     overflow: auto;
-  }
-  
-  #hits {
+}
+
+#hits {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Adjust as needed */
     gap: 20px;
@@ -52,28 +52,27 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .ais-Hits-item {
+}
+
+.ais-Hits-item {
     display: block; /* Ensure they are treated as grid items */
     border: 2px solid blue; /* For diagnostics */
     background-color: yellow; /* For diagnostics */
-  }
-  
-  .hit {
+}
+
+.hit {
     border: 1px solid #ddd;
     padding: 10px;
     background-color: #fff;
     box-sizing: border-box;
-  }
-  
-  .hit-image {
-    display:flex;
+}
+
+.hit-image {
+    display: flex;
     width: 100%;
     height: auto;
-  }
-  
-  #pagination {
+}
+
+#pagination {
     margin-top: 20px;
-  }
-  
+}
