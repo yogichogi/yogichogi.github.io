@@ -37,7 +37,7 @@ body {
 
 .main-content {
     flex: 1;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     background-color: lightgreen;
     overflow: auto;
@@ -58,6 +58,7 @@ body {
 
 .ais-Hits-item {
     flex: 0 0 calc(33.333% - 14px);
+    max-width: calc(33.333% - 14px);
     min-width: 200px;
     border: 2px solid blue;
     background-color: yellow;
