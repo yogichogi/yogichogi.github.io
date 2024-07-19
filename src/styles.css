@@ -33,6 +33,9 @@ body {
     background-color: #f4f4f4;
     padding: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   
   .main-content {
@@ -40,15 +43,6 @@ body {
     background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
-  }
-  
-  #filters {
-    margin-bottom: 20px;
-  }
-  
-  #brand-list,
-  #price-range {
-    margin-bottom: 20px;
   }
   
   #hits {
