@@ -58,6 +58,7 @@ body {
     display: block; /* Ensure they are treated as grid items */
     border: 2px solid blue; /* For diagnostics */
     background-color: yellow; /* For diagnostics */
+    width: 100%; /* Ensure the items span the full width */
 }
 
 .hit {
