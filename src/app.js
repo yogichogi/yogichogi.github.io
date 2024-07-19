@@ -27,17 +27,19 @@ search.addWidgets([
     container: "#hits",
     templates: {
       item: `
-        <div class="hit">
-          <img src="{{image}}" alt="{{name}}" class="hit-image" />
-          <div class="hit-content">
-            <div class="hit-title">
-              {{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}
-            </div>
-            <div class="hit-price">
-              \${{#price}}{{price}}{{/price}}
+        <li class="ais-Hits-item">
+          <div class="hit">
+            <img src="{{image}}" alt="{{name}}" class="hit-image" />
+            <div class="hit-content">
+              <div class="hit-title">
+                {{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}
+              </div>
+              <div class="hit-price">
+                \${{#price}}{{price}}{{/price}}
+              </div>
             </div>
           </div>
-        </div>
+        </li>
       `,
     },
     transformItems(items) {

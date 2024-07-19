@@ -40,8 +40,6 @@ body {
     padding: 20px;
     box-sizing: border-box;
     background-color: lightgreen; /* For diagnostics */
-    display: flex;
-    flex-direction: column;
   }
   
   #hits {
@@ -57,7 +55,6 @@ body {
   
   .ais-Hits-item {
     display: block; /* Ensure they are treated as grid items */
-    grid-column: span 1; /* Ensure each item spans one column */
   }
   
   .hit {
