@@ -45,7 +45,7 @@ body {
   
   #hits {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Adjust as needed */
+    grid-template-columns: repeat(3, 1fr); /* Adjust as needed */
     gap: 20px;
     width: 100%; /* Ensure the container spans the full width */
     border: 2px solid red; /* For diagnostics */
