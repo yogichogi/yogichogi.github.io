@@ -24,7 +24,6 @@ body {
   
   .container {
     display: flex;
-    flex-direction: row;
     height: calc(100vh - 100px); /* Adjusted to account for the header and searchbox */
   }
   
@@ -33,14 +32,11 @@ body {
     background-color: #f4f4f4;
     padding: 20px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-shrink: 0; /* Prevent shrinking */
   }
   
   .main-content {
     flex: 1;
-    background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
   }
