@@ -56,8 +56,7 @@ body {
   }
   
   .ais-Hits-item {
-    display: flex;
-    flex-direction: column;
+    display: block; /* Ensure they are treated as grid items */
   }
   
   .hit {
