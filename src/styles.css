@@ -45,13 +45,16 @@ body {
 
 #hits {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Adjust as needed */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    width: 100%; /* Ensure the container spans the full width */
-    border: 2px solid red; /* For diagnostics */
+    width: 100%;
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.ais-Hits-list {
+    display: contents;
 }
 
 .ais-Hits-item {
