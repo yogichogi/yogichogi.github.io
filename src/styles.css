@@ -1,7 +1,16 @@
-#header .img {
-    max-width: 2rem;
-    max-height: 2rem;
-}
+header {
+    display: flex;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin-right: 20px;
+  }
+  
+  .header-logo {
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+  }
 
 #filters {
     margin-top: 20px;
