@@ -17,10 +17,15 @@ body {
     height: auto;
   }
   
+  .searchbox {
+    padding: 10px;
+    background-color: #fff;
+  }
+  
   .container {
     display: flex;
     flex-direction: row;
-    height: calc(100vh - 80px); /* Adjusted to account for the header */
+    height: calc(100vh - 100px); /* Adjusted to account for the header and searchbox */
   }
   
   .sidebar {
@@ -46,8 +51,19 @@ body {
     margin-bottom: 20px;
   }
   
-  #hits,
+  #hits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .hit {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
   #pagination {
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
   
