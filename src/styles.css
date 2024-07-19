@@ -1,4 +1,8 @@
-/* Style the filters section to distinguish it from the search bar */
+#header .img {
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
 #filters {
     margin-top: 20px;
     padding: 10px;
@@ -15,7 +19,6 @@
     display: none;
   }
   
-  /* Style the range slider */
   .ais-RangeSlider {
     padding: 10px;
   }
