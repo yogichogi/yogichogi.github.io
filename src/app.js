@@ -34,7 +34,7 @@ search.addWidgets([
               {{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}
             </div>
             <div class="hit-price">
-              ${{ price }}
+              \${{#price}}{{price}}{{/price}}
             </div>
           </div>
         </div>
