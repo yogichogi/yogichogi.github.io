@@ -43,7 +43,7 @@ body {
   
   #hits {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Adjust as needed */
     gap: 20px;
     width: 100%; /* Ensure the container spans the full width */
   }
@@ -53,6 +53,11 @@ body {
     padding: 10px;
     background-color: #fff;
     box-sizing: border-box;
+  }
+  
+  .hit-image {
+    width: 100%;
+    height: auto;
   }
   
   #pagination {
