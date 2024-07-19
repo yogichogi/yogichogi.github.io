@@ -39,6 +39,9 @@ body {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
+    background-color: lightgreen; /* For diagnostics */
+    display: flex;
+    flex-direction: column;
   }
   
   #hits {
@@ -46,6 +49,15 @@ body {
     grid-template-columns: repeat(2, 1fr); /* Adjust as needed */
     gap: 20px;
     width: 100%; /* Ensure the container spans the full width */
+    border: 2px solid red; /* For diagnostics */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .ais-Hits-item {
+    display: flex;
+    flex-direction: column;
   }
   
   .hit {
@@ -53,6 +65,7 @@ body {
     padding: 10px;
     background-color: #fff;
     box-sizing: border-box;
+    background-color: lightblue; /* For diagnostics */
   }
   
   .hit-image {

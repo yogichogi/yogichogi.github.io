@@ -40,6 +40,10 @@ search.addWidgets([
         </div>
       `,
     },
+    transformItems(items) {
+      console.log("Items:", items);
+      return items;
+    },
   }),
   pagination({
     container: "#pagination",
