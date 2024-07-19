@@ -1,9 +1,15 @@
+/* Style the header */
 header {
-    display: flex;
-    align-items: center;
+    margin-bottom: 20px;
   }
   
-  header h1 {
+  .header-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .header-top h1 {
     margin-right: 20px;
   }
   
@@ -11,8 +17,16 @@ header {
     width: 50px; /* Adjust the width as needed */
     height: auto;
   }
-
-#filters {
+  
+  /* Style the search box */
+  #searchbox {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the filters section to distinguish it from the search bar */
+  #filters {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -21,13 +35,11 @@ header {
   
   #brand-list,
   #price-range {
-    margin-bottom: 20px;
-  }
-
-  #filters .ais-SearchBox {
-    display: none;
+    width: 48%; /* Adjust width to fit side by side */
+    margin-bottom: 0;
   }
   
+  /* Style the range slider */
   .ais-RangeSlider {
     padding: 10px;
   }
