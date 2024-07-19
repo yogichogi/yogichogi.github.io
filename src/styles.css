@@ -55,10 +55,9 @@ body {
 }
 
 .ais-Hits-item {
-    display: block; /* Ensure they are treated as grid items */
     border: 2px solid blue; /* For diagnostics */
     background-color: yellow; /* For diagnostics */
-    width: 100%; /* Ensure the items span the full width */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
 }
 
 .hit {
