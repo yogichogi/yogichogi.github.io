@@ -1,58 +1,53 @@
-/* Style the header */
-header {
-    margin-bottom: 20px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
   }
   
   .header-top {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .header-top h1 {
-    margin-right: 20px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
   }
   
   .header-logo {
-    width: 50px; /* Adjust the width as needed */
+    width: 50px;
     height: auto;
   }
   
-  /* Style the search box */
-  #searchbox {
-    margin-bottom: 20px;
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: calc(100vh - 80px); /* Adjusted to account for the header */
   }
   
-  /* Style the filters section to distinguish it from the search bar */
+  .sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .main-content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
   #filters {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
+    margin-bottom: 20px;
   }
   
   #brand-list,
   #price-range {
-    width: 48%; /* Adjust width to fit side by side */
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   
-  /* Style the range slider */
-  .ais-RangeSlider {
-    padding: 10px;
-  }
-  
-  .ais-RangeSlider--horizontal {
-    width: 100%;
-  }
-  
-  .ais-RangeSlider--horizontal .ais-RangeSlider-handle {
-    background-color: #007bff;
-  }
-  
-  .ais-RangeSlider--horizontal .ais-RangeSlider-track {
-    background-color: #ddd;
+  #hits,
+  #pagination {
+    margin-bottom: 20px;
   }
   

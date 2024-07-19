@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Search</title>
+    <title>SuperSearch</title>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css/themes/satellite-min.css">
     <link rel="stylesheet" href="./styles.css">
@@ -11,19 +11,25 @@
 <body>
     <header>
         <div class="header-top">
-            <h1>Super Search</h1>
+            <h1>SuperSearch</h1>
             <img src="./images/SuperSearch.webp" alt="Logo" class="header-logo">
         </div>
         <div id="searchbox"></div>
-        <div id="filters">
-            <div id="brand-list"></div>
-            <div id="price-range"></div>
-        </div>
     </header>
-    <main>
-        <div id="hits"></div>
-        <div id="pagination"></div>
-    </main>
+    <div class="container">
+        <div class="sidebar">
+            <div id="filters">
+                <div id="brand-list"></div>
+                <div id="price-range"></div>
+            </div>
+        </div>
+        <div class="main-content">
+            <main>
+                <div id="hits"></div>
+                <div id="pagination"></div>
+            </main>
+        </div>
+    </div>
     <!-- Use type="module" for ES module support -->
     <script type="module" src="./app.js"></script>
 </body>
