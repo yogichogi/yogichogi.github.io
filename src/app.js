@@ -42,6 +42,10 @@ search.addWidgets([
         </li>
       `,
     },
+    transformItems(items) {
+      console.log("Items:", items);
+      return items;
+    },
   }),
   pagination({
     container: "#pagination",
@@ -69,3 +73,6 @@ search.addWidgets([
 ]);
 
 search.start();
+
+console.log("Hits container:", document.querySelector("#hits"));
+console.log("Main content:", document.querySelector(".main-content"));
