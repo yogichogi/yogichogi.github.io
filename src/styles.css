@@ -4,27 +4,41 @@ body {
 }
 
 .header-top {
+    background-color: #ffdb58; /* Yellow color matching the icon background */
+    padding: 10px 20px;
+}
+
+.header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header-logo {
-    width: 50px;
+    width: 60px; /* Increased size */
     height: auto;
+    margin-right: 15px;
+}
+
+.header-title {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
 }
 
 .searchbox {
     padding: 10px;
     background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .container {
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 140px); /* Adjusted for larger header */
+    max-width: 1200px;
+    margin: 0 auto;
     overflow: hidden;
 }
 
