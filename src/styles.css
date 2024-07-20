@@ -3,12 +3,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
+header {
+    background-color: #eaba22; /* Apply the color to the entire header */
+}
+
 .header-top {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     padding: 10px 20px;
-    background-color: #eaba22; /* Updated to match the icon exactly */
 }
 
 .header-logo {
