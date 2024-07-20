@@ -50,21 +50,21 @@ body {
     width: 100%;
     flex-grow: 1;
     overflow-y: auto;
-    padding-right: 20px; /* Added padding to the right */
+    padding: 0 15px; /* Even padding on left and right */
 }
 
 .ais-Hits-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 0 10px 10px;
+    gap: 15px; /* Increased gap for better spacing */
+    padding: 0 0 10px; /* Removed left and right padding */
     margin: 0;
     list-style: none;
 }
 
 .ais-Hits-item {
-    flex: 0 0 calc(33.333% - 10px); /* Adjusted to account for gap */
-    max-width: calc(33.333% - 10px); /* Adjusted to account for gap */
+    flex: 0 0 calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
     min-width: 200px;
     border: 2px solid blue;
     background-color: yellow;
