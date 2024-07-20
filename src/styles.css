@@ -3,15 +3,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header {
-    background-color: #eaba22; /* Apply the color to the entire header */
+body > header,
+.ais-InstantSearch header,
+.ais-InstantSearch .header-top {
+    background-color: #eaba22 !important; /* Apply the color to the entire header */
 }
 
 .header-top {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background-color: #eaba22;
 }
 
 .header-logo {
