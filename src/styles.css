@@ -4,15 +4,11 @@ body {
 }
 
 .header-top {
-    background-color: #eaba22; /* Yellow color matching the icon background */
-    padding: 10px 20px;
-}
-
-.header-content {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #eaba22; /* Updated to match the icon exactly */
 }
 
 .header-logo {
@@ -21,24 +17,19 @@ body {
     margin-right: 15px;
 }
 
-.header-title {
-    font-size: 24px;
-    color: #333;
+h1 {
     margin: 0;
+    color: #333; /* Adjust text color as needed for contrast */
 }
 
 .searchbox {
     padding: 10px;
     background-color: #fff;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .container {
     display: flex;
     height: calc(100vh - 140px); /* Adjusted for larger header */
-    max-width: 1200px;
-    margin: 0 auto;
     overflow: hidden;
 }
 
