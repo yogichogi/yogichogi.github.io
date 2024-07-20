@@ -50,15 +50,15 @@ body {
 .ais-Hits-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 0;
+    gap: 10px;
+    padding: 0 10px;
     margin: 0;
     list-style: none;
 }
 
 .ais-Hits-item {
-    flex: 0 0 calc(33.333% - 14px);
-    max-width: calc(33.333% - 14px);
+    flex: 0 0 calc(33.333% - 7px);
+    max-width: calc(33.333% - 7px);
     min-width: 200px;
     border: 2px solid blue;
     background-color: yellow;
