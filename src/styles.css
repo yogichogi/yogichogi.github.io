@@ -218,7 +218,7 @@ body {
     /* Adjust search box for desktop only */
     .searchbox {
         max-width: 1200px;
-        padding-left: 0;
+        padding-left: 5px;
         padding-right: 0;
     }
 
