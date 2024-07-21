@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperSearch</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css/themes/satellite-min.css">
-    <link rel="stylesheet" href="styles.css?v=1.2">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css">
+    <link rel="stylesheet" href="styles.css?v=2">
 </head>
 <body>
-    <header>
-        <div class="header-top">
+    <header class="header-top">
+        <div class="header-content">
             <img src="./images/SuperSearch.webp" alt="Logo" class="header-logo">
-            <h1>SuperSearch</h1>
+            <h1 class="header-title">SuperSearch</h1>
         </div>
-        <div id="searchbox" class="searchbox"></div>
     </header>
+
+    <div class="searchbox" id="searchbox"></div>
+
     <div class="container">
         <div class="sidebar">
             <div id="brand-list"></div>
             <div id="price-range"></div>
         </div>
+
         <div class="main-content">
-            <ul id="hits" class="hits"></ul>
+            <div id="hits"></div>
             <div id="pagination"></div>
         </div>
     </div>
-    <script type="module" src="./app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.14.2/dist/algoliasearch-lite.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.49.2/dist/instantsearch.production.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
