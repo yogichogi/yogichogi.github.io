@@ -33,7 +33,7 @@ body {
 .searchbox {
     padding: 10px;
     background-color: #fff;
-    max-width: 1220px;
+    max-width: 1200px;
     margin: 0 auto;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     box-sizing: border-box;
@@ -179,6 +179,11 @@ body {
     margin-right: 5px;
 }
 
+/* Add padding for price range slider in mobile view */
+#price-range {
+    padding: 0 10px;
+}
+
 /* Media query for desktop view */
 @media (min-width: 768px) {
     .container {
@@ -217,25 +222,11 @@ body {
 
     /* Adjust search box for desktop only */
     .searchbox {
-        max-width: 1200px;
-        padding-left: 5px;
-        padding-right: 0;
+        padding: 10px 20px;
     }
 
-    /* New styles to align search box with content below */
-    .ais-SearchBox {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-    }
-
-    .ais-SearchBox-form {
-        width: 100%;
-        display: flex;
-    }
-
-    .ais-SearchBox-input {
-        flex-grow: 1;
-        margin-right: 10px;
+    /* Remove padding for price range slider in desktop view */
+    #price-range {
+        padding: 0;
     }
 }
