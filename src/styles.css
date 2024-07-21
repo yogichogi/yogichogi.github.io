@@ -215,9 +215,10 @@ body {
         padding: 5px 0;
     }
 
-    /* Align search box with content below for desktop only */
+    /* Adjust search box for desktop only */
     .searchbox {
-        padding: 10px 20px;
-        max-width: 1160px;
+        max-width: 1180px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
