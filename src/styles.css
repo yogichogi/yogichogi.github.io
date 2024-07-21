@@ -179,9 +179,25 @@ body {
     margin-right: 5px;
 }
 
-/* Add padding for price range slider in mobile view */
-#price-range {
-    padding: 0 10px;
+/* Range slider styles */
+.ais-RangeSlider {
+    margin: 0 10px;
+}
+
+.rheostat-horizontal {
+    width: calc(100% - 20px);
+}
+
+.rheostat-background {
+    width: 100%;
+}
+
+.rheostat-handle {
+    margin-left: -12px;
+}
+
+.rheostat-marker {
+    margin-left: -1px;
 }
 
 /* Media query for desktop view */
@@ -225,8 +241,12 @@ body {
         padding: 10px 20px;
     }
 
-    /* Remove padding for price range slider in desktop view */
-    #price-range {
-        padding: 0;
+    /* Adjust range slider for desktop */
+    .ais-RangeSlider {
+        margin: 0;
+    }
+
+    .rheostat-horizontal {
+        width: 100%;
     }
 }
