@@ -71,14 +71,14 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
-    margin: 0;
+    margin: 0 -5px; /* Add negative margin to counteract item padding */
     list-style: none;
 }
 
 .ais-Hits-item {
-    flex: 0 0 calc(50% - 5px);
-    width: calc(50% - 5px);
-    margin-bottom: 10px;
+    flex: 0 0 calc(50% - 10px);
+    width: calc(50% - 10px);
+    margin: 0 5px 10px 5px; /* Add horizontal margin */
     border: 1px solid #e0e0e0;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -194,13 +194,13 @@ body {
 
     .ais-Hits-list {
         justify-content: flex-start;
+        margin: 0 -10px; /* Adjust negative margin for desktop */
     }
 
     .ais-Hits-item {
-        flex: 0 0 calc(20% - 16px);
-        width: calc(20% - 16px);
-        margin-right: 20px;
-        margin-bottom: 20px;
+        flex: 0 0 calc(20% - 20px);
+        width: calc(20% - 20px);
+        margin: 0 10px 20px 10px; /* Adjust margin for desktop */
     }
 
     .hit {
@@ -216,13 +216,5 @@ body {
         background-color: transparent;
         border-radius: 0;
         padding: 5px 0;
-    }
-}
-
-/* Ensure two hits per row on very small screens */
-@media (max-width: 480px) {
-    .ais-Hits-item {
-        flex: 0 0 calc(50% - 5px);
-        width: calc(50% - 5px);
     }
 }
