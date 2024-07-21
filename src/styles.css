@@ -218,3 +218,11 @@ body {
         padding: 5px 0;
     }
 }
+
+/* Ensure two hits per row on very small screens */
+@media (max-width: 480px) {
+    .ais-Hits-item {
+        flex: 0 0 calc(50% - 5px);
+        width: calc(50% - 5px);
+    }
+}
