@@ -1,12 +1,4 @@
-import algoliasearch from "algoliasearch/lite";
-import instantsearch from "instantsearch.js";
-import {
-  searchBox,
-  hits,
-  pagination,
-  refinementList,
-  rangeSlider,
-} from "instantsearch.js/es/widgets";
+const { algoliasearch, instantsearch } = window;
 
 const searchClient = algoliasearch(
   "YMNPMTXRZS",
@@ -19,18 +11,18 @@ const search = instantsearch({
 });
 
 search.addWidgets([
-  searchBox({
+  instantsearch.widgets.searchBox({
     container: "#searchbox",
     placeholder: "Search for products...",
   }),
-  hits({
+  instantsearch.widgets.hits({
     container: "#hits",
     templates: {
       item: `
         <div class="hit">
           <img src="{{image}}" alt="{{name}}" class="hit-image" />
           <div class="hit-content">
-            <div class="hit-title">
+            <div class="hit-name">
               {{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}
             </div>
             <div class="hit-price">
@@ -45,10 +37,10 @@ search.addWidgets([
       return items;
     },
   }),
-  pagination({
+  instantsearch.widgets.pagination({
     container: "#pagination",
   }),
-  refinementList({
+  instantsearch.widgets.refinementList({
     container: "#brand-list",
     attribute: "brand",
     searchable: false,
@@ -56,7 +48,7 @@ search.addWidgets([
       header: "Brand",
     },
   }),
-  rangeSlider({
+  instantsearch.widgets.rangeSlider({
     container: "#price-range",
     attribute: "price",
     templates: {
