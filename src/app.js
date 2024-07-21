@@ -32,6 +32,9 @@ search.addWidgets([
         </div>
       `,
     },
+    cssClasses: {
+      item: "ais-Hits-item",
+    },
     transformItems(items) {
       console.log("Items:", items);
       return items;
