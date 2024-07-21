@@ -71,14 +71,13 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
-    margin: 0 -5px; /* Add negative margin to counteract item padding */
+    margin: -5px;
     list-style: none;
 }
 
 .ais-Hits-item {
-    flex: 0 0 calc(50% - 10px);
-    width: calc(50% - 10px);
-    margin: 0 5px 10px 5px; /* Add horizontal margin */
+    flex-basis: calc(50% - 10px);
+    margin: 5px;
     border: 1px solid #e0e0e0;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -194,13 +193,10 @@ body {
 
     .ais-Hits-list {
         justify-content: flex-start;
-        margin: 0 -10px; /* Adjust negative margin for desktop */
     }
 
     .ais-Hits-item {
-        flex: 0 0 calc(20% - 20px);
-        width: calc(20% - 20px);
-        margin: 0 10px 20px 10px; /* Adjust margin for desktop */
+        flex-basis: calc(20% - 10px);
     }
 
     .hit {
