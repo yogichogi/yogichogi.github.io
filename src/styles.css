@@ -31,7 +31,7 @@ body {
 }
 
 .searchbox {
-    padding: 10px;
+    padding: 10px 0;
     background-color: #fff;
     max-width: 1200px;
     margin: 0 auto;
@@ -217,8 +217,25 @@ body {
 
     /* Adjust search box for desktop only */
     .searchbox {
-        max-width: 1180px;
-        padding-left: 20px;
-        padding-right: 20px;
+        max-width: 1200px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* New styles to align search box with content below */
+    .ais-SearchBox {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .ais-SearchBox-form {
+        width: 100%;
+        display: flex;
+    }
+
+    .ais-SearchBox-input {
+        flex-grow: 1;
+        margin-right: 10px;
     }
 }
